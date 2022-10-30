@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GIzW5E2Cmkon2cDLQbUOHI82bkEq8uWE/kIq7zz/49A=",
+  "Hash": "bRyq1a0toc9s8algucUQvAo2PASFMMXcjratrpijinc=",
   "Source": "Beltelecom",
   "BasePath": "_content/Beltelecom",
   "Mode": "Default",
@@ -136,40 +136,6 @@
       "OriginalItemSpec": "wwwroot\\images\\call.png"
     },
     {
-      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\google.svg",
-      "SourceId": "Beltelecom",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
-      "BasePath": "_content/Beltelecom",
-      "RelativePath": "images/google.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\google.svg"
-    },
-    {
-      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\Login Form - No JavaScript.zip",
-      "SourceId": "Beltelecom",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
-      "BasePath": "_content/Beltelecom",
-      "RelativePath": "images/Login Form - No JavaScript.zip",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Login Form - No JavaScript.zip"
-    },
-    {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\logo.svg",
       "SourceId": "Beltelecom",
       "SourceType": "Discovered",
@@ -270,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\zala.png"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\Требования_КП.xlsx",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "images/Требования_КП.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Требования_КП.xlsx"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\js\\site.js",
