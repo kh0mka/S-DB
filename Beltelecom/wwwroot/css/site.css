@@ -8,6 +8,56 @@ html {
   }
 }
 
+header {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ul.ulMenu {
+    list-style-type: none;
+    margin-bottom: 35px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003c78;
+    width: 100%;
+    height: 54px;
+    line-height: 1em;
+}
+
+ul.ulMenu > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul.ulMenu > li > a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 54px;
+  color: white;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+}
+
+ul.ulMenu > li > a:hover {
+    background-color: #003c60;
+    border-top: 2px solid #33b4ee;
+    border-bottom: 2px solid #33b4ee;
+    max-height: 54px;
+    vertical-align: middle;
+}
+
+ul.ulMenu li.selected a {
+    color: #FF2;
+}
+
+li.selected a {
+    color: #FF2;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -17,8 +67,13 @@ body {
     margin-bottom: 60px;
 }
 
-div .container {
-    width: 800px;
+body div.layoutInfo {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+div .layoutInfo {
+    width: 960px;
     padding: 10px;
     text-align: center;
 }
@@ -107,14 +162,14 @@ td .text-center {
 
 div .about {
     margin: auto;
-    width: 1111px;
+    width: 960px;
     text-align: justify;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
 }
 
 div .aboutHead {
-    width: 1111px;
+    width: 960px;
     font-family: "Rubik", sans-serif;
     margin: auto;
     text-align: left;
@@ -137,5 +192,45 @@ ul li.change::before {
 
 .align-right {
     float: right;
-    padding-top: 15px;
+    padding-top: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #002b55;
+    line-height: 51px;
+    text-align: center;
+}
+
+footer div.thirdFooter {
+    color: #d6dce3;
+    line-height: 1em;
+    font-family: "Rubik", sans-serif;
+    padding-left: 15px;
+    padding-right: 30px;
+    font-size: 16px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 51px;
+}
+
+footer div.socials {
+    color: #d6dce3;
+    line-height: 1em;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 51px;
+    border: 1px black;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }

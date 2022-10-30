@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zMfTuPEoUCh2fsOcsORMoxbOUQvrcaE7VjNdBKj1OvM=",
+  "Hash": "fDgtnIyX6c9KQ2Cw6YD8PeusWhrZiKPd0TXaeMUBgp8=",
   "Source": "Beltelecom",
   "BasePath": "_content/Beltelecom",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.svg"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\shapka.jpg",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "images/shapka.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\shapka.jpg"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\videocontrol-logo.png",

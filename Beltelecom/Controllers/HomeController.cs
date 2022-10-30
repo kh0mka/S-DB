@@ -31,6 +31,10 @@ namespace Beltelecom.Controllers
         {
             return View();
         }
+        public IActionResult Authorization()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

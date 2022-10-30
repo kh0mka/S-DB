@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Beltelecom.styles.css" asp-append-version="true" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    @*<header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Beltelecom</a>
@@ -35,16 +37,70 @@
                 </div>
             </div>
         </nav>
+    </header>*@
+    <header class="header">
+        <nav class="navMenu">
+            <ul class="ulMenu">
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Политика</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Tariffs">Тарифы</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="About">О компании</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Authorization">Войти</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <div class="layoutInfo">
+        <div class="item">
+            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.svg" /></a>
+        </div>
+        <div class="callInfo">
+            телефонный центр
+            <br />
+            обслуживания клиентов
+        </div>
+        <img src="~/images/call.png" width="48" height="48" />
+        <div class="callNumber">
+            123
+        </div>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Beltelecom - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="thirdFooter">РУП «Белтелеком». УНП 101007741</div>
+        <div class="socials">
+            <a href="https://twitter.com/BeltelecomBy" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://vk.com/bybeltelecom" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-vk fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/beltelecomby" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/beltelecomby" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://ok.ru/beltelecomby" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-odnoklassniki fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com/channel/UCNvH8TkNH6zxkZtt8IqNLQg" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+        <div class="socials">
+            <a href="https://t.me/bybeltelecom" class="social-icon" rel="nofollow" target="_blank"><i class="fab fa-telegram-plane fa-lg"></i></a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
