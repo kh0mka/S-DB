@@ -1,2 +1,18 @@
 # S-DB
-Course work on discipline "Structures and databases". Student: Khomenok Group: 013802  Subject: ISP support database Considered on the example of Beltelecom
+EN \ English
+
+Course work on discipline "Structures and databases". 
+Subject: database to support the operation of the ISP
+Example: Beltelecom
+
+Student: Khomenok
+Group: 013802  
+
+Ru \ Russian
+
+Курсовая работа по дисциплине "Стуктуры и базы данных"
+Тема: база данных для поддержки работы интернет-провайдера
+Рассмотрено на примере Белтелекома
+
+Студент: Хоменок
+Группа: 013802
