@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fDgtnIyX6c9KQ2Cw6YD8PeusWhrZiKPd0TXaeMUBgp8=",
+  "Hash": "GIzW5E2Cmkon2cDLQbUOHI82bkEq8uWE/kIq7zz/49A=",
   "Source": "Beltelecom",
   "BasePath": "_content/Beltelecom",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\relax\\Beltelecom\\Beltelecom\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Beltelecom.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\css\\auth\\auth.css",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "css/auth/auth.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth\\auth.css"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\css\\site.css",
@@ -117,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\call.png"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\google.svg",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "images/google.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\google.svg"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\Login Form - No JavaScript.zip",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "images/Login Form - No JavaScript.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Login Form - No JavaScript.zip"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\logo.svg",

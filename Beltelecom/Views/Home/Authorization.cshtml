@@ -1,5 +1,37 @@
 ﻿@{
-    ViewData["Title"] = "Главная";
+    ViewData["Title"] = "Вход в личный кабинет";
 }
 
-@*Coming soon..*@
+<link rel="stylesheet" href="~/css/auth/auth.css" asp-append-version="true" />
+<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/c6002521e1.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="center">
+        <a href="https://google.com" rel="nofollow" target="_blank">
+            <div class="method">
+                <i class="fa-brands fa-google fa-lg"></i>
+                <p>
+                    Google Authorization
+                </p>
+            </div>
+        </a>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Имя пользователя</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Пароль</label>
+            </div>
+            <div class="pass">Забыли пароль?</div>
+            <input type="submit" value="Вход">
+            <div class="signup_link">
+                Нет аккаунта? <a href="#">Зарегистрируйся!</a>
+            </div>
+        </form>
+    </div>
+</body>
