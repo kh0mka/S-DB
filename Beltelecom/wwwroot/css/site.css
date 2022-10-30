@@ -1,0 +1,141 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+div .container {
+    width: 800px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item {
+    margin-right: 128px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.callInfo {
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    color: midnightblue;
+    text-align: right;
+    font-size: 16px;
+}
+
+.callNumber {
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    color: midnightblue;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th {
+    font-size: 18px;
+    padding: 12px 15px;
+}
+
+.content-table td {
+    padding: 12px 15px;
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.content-table tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    font-size: 18px;
+    border: 2px solid #dddddd;
+    border-collapse: collapse;
+}
+
+td .text-center {
+    text-align: center;
+}
+
+.content-table thead th.pp {
+    width: 90px;
+}
+
+div .about {
+    margin: auto;
+    width: 1111px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+}
+
+div .aboutHead {
+    width: 1111px;
+    font-family: "Rubik", sans-serif;
+    margin: auto;
+    text-align: left;
+    font-size: 1.8em;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+ul .change {
+    list-style: none;
+}
+
+ul li.change::before {
+    content: "\25A0";
+    color: #49b4ea;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -20px;
+}
+
+.align-right {
+    float: right;
+    padding-top: 15px;
+}
