@@ -13,6 +13,7 @@ header {
     text-align: center;
     vertical-align: middle;
     display: inline-block;
+    font-family: 'Rubik', sans-seriff;
 }
 
 ul.ulMenu {
@@ -43,6 +44,14 @@ ul.ulMenu > li > a {
 }
 
 ul.ulMenu > li > a:hover {
+    background-color: #003c60;
+    border-top: 2px solid #33b4ee;
+    border-bottom: 2px solid #33b4ee;
+    max-height: 54px;
+    vertical-align: middle;
+}
+
+ul.ulMenu > li > a.active:focus {
     background-color: #003c60;
     border-top: 2px solid #33b4ee;
     border-bottom: 2px solid #33b4ee;

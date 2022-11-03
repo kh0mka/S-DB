@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bRyq1a0toc9s8algucUQvAo2PASFMMXcjratrpijinc=",
+  "Hash": "Kg1dokjXz2b6tw3/xuIm6qCM6xBLXYSANm7JptKsae0=",
   "Source": "Beltelecom",
   "BasePath": "_content/Beltelecom",
   "Mode": "Default",
@@ -136,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\images\\call.png"
     },
     {
-      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\logo.svg",
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\logo.png",
       "SourceId": "Beltelecom",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
       "BasePath": "_content/Beltelecom",
-      "RelativePath": "images/logo.svg",
+      "RelativePath": "images/logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\logo.svg"
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\shapka.jpg",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\shapka.jpg"
+    },
+    {
+      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\shapka.png",
+      "SourceId": "Beltelecom",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
+      "BasePath": "_content/Beltelecom",
+      "RelativePath": "images/shapka.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\shapka.png"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\videocontrol-logo.png",
