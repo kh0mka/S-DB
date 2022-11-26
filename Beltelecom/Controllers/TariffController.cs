@@ -19,8 +19,8 @@ namespace Beltelecom.Controllers
             _config = config;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Tariff>>> GetAllTariff()
+        [HttpGet]  // Get a list of all available Tariffs
+        public async Task<ActionResult<List<Tariff>>> ListAllTariffs()
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
@@ -29,9 +29,9 @@ namespace Beltelecom.Controllers
             return Ok(alltariff);
         }
 
-        [HttpGet("id={tariffId}")]
+        [HttpGet("id={tariffId}")] // Get a list of tariffs by the specified identifier (TariffId)
 
-        public async Task<ActionResult<Tariff>> GetTariff(int tariffId)
+        public async Task<ActionResult<Tariff>> ListTariffById(int tariffId)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
@@ -45,22 +45,48 @@ namespace Beltelecom.Controllers
             return Ok(tmpTariff);
         }
 
-        [HttpGet("cost={costTariff}")]
+        [HttpGet("SpeedIsHigher={SpeedValue}")] // Get a list of tariffs, the speed of which is greater than or equal to the specified value
 
-        public async Task<ActionResult<Tariff>> CostTUsers(decimal costTariff)
+        public async Task<ActionResult<Tariff>> SpeedIsHigher(float SpeedValue)
+        {
+            var connectionString = _config.GetConnectionString("DbConnection");
+            await using var connection = new MySqlConnection(connectionString);
+            var tmpSpeedValue = await connection.QueryFirstOrDefaultAsync<Tariff>("SELECT * FROM Tariff where Speed >= @Speed",
+                new { Speed = SpeedValue });
+            if (tmpSpeedValue is null)
+            {
+                return BadRequest($"Tariffs, the speed of which is more than {SpeedValue} MB/s was not found.");
+            }
+            return Ok(tmpSpeedValue);
+        }
+
+        [HttpGet("SpeedIsBelow={SpeedValue}")] // Get a list of tariffs whose speed is less than or equal to the specified value
+
+        public async Task<ActionResult<Tariff>> SpeedIsBelow(float SpeedValue)
+        {
+            var connectionString = _config.GetConnectionString("DbConnection");
+            await using var connection = new MySqlConnection(connectionString);
+            var tmpSpeedValue = await connection.QueryFirstOrDefaultAsync<Tariff>("SELECT * FROM Tariff where Speed <= @Speed",
+                new { Speed = SpeedValue });
+            if (tmpSpeedValue is null)
+            {
+                return BadRequest($"Tariffs, the speed of which is less than {SpeedValue} MB/s was not found.");
+            }
+            return Ok(tmpSpeedValue);
+        }
+
+        [HttpGet("cost={costTariff}")] // Get a list of customers whose tariff exceeds the specified price
+
+        public async Task<ActionResult<Tariff>> RichPoor(decimal costTariff)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
             var tmpCost = await connection.QueryAsync<Tariff>("SELECT Clients.ClientId AS Id, Clients.Email AS Email, Tariff.Cost AS Cost, Tariff.Name AS TariffName FROM Clients JOIN Tariff on Clients.TariffId = Tariff.TariffId WHERE Tariff.TariffId = ANY(SELECT TariffId from Tariff WHERE Cost >= @Cost); ", new { Cost = costTariff });
-            //if (tmpCost is null)
-            //{
-            //    return BadRequest($"Cost {costTariff} very expensive.");
-            //}
             return Ok(tmpCost);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<List<Tariff>>> CreateTariff(Tariff createtariff)
+        [HttpPost] // Add New Tariff
+        public async Task<ActionResult<List<Tariff>>> AddTariff(Tariff createtariff)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
@@ -68,7 +94,7 @@ namespace Beltelecom.Controllers
             return Ok(await SelectAllTariff(connection));
         }
 
-        [HttpPut]
+        [HttpPut] // Update Tariff
         public async Task<ActionResult<List<Tariff>>> UpdateTariff(Tariff updatetariff)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
@@ -77,21 +103,18 @@ namespace Beltelecom.Controllers
             return Ok(await SelectAllTariff(connection));
         }
 
-        [HttpDelete("{tariffId}")]
-        public async Task<ActionResult<List<Tariff>>> DeleteHero(int tariffId)
+        [HttpDelete("delete={tariffId}")] // Delete Tariff
+        public async Task<ActionResult<List<Tariff>>> DeleteTariff(int tariffId)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
-            await connection.ExecuteAsync("delete from tariff where TariffId = @TariffId", new {TariffId = tariffId});
+            await connection.ExecuteAsync("delete from tariff where TariffId = @TariffId", new { TariffId = tariffId });
             return Ok(await SelectAllTariff(connection));
         }
-
         private static async Task<IEnumerable<Tariff>> SelectAllTariff(MySqlConnection connection)
         {
             return await connection.QueryAsync<Tariff>("select * from Tariff");
         }
-
-
 
     }
 }
