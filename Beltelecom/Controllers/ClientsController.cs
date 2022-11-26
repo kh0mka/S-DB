@@ -3,6 +3,8 @@ using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MySqlX.XDevAPI;
+using Beltelecom.ClassEntities;
+using Beltelecom.ClassViewModels;
 
 namespace Beltelecom.Controllers
 {
@@ -39,6 +41,16 @@ namespace Beltelecom.Controllers
                 return BadRequest($"ClientId - {clientId} does not exist.");
             }
             return Ok(tmpClientById);
+        }
+
+        [HttpGet("emails")] // Get only Emails from Clients (many rows - one column)
+
+        public async Task<ActionResult<List<ClientsGetEmailsViewModel>>> GetEmails()
+        {
+            var connectionString = _config.GetConnectionString("DbConnection");
+            await using var connection = new MySqlConnection(connectionString);
+            var getEmails = await connection.QueryAsync<ClientsGetEmailsViewModel>("SELECT Email as 'EmailClient' FROM Clients");
+            return Ok(getEmails);
         }
 
         [HttpGet("email={clientEmail}")] // Get a list of Clients by the Email
