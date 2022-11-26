@@ -77,11 +77,11 @@ namespace Beltelecom.Controllers
 
         [HttpGet("cost={costTariff}")] // Get a list of customers whose tariff exceeds the specified price
 
-        public async Task<ActionResult<Tariff>> RichPoor(decimal costTariff)
+        public async Task<ActionResult<ClientsViewModel>> RichPoor(decimal costTariff)
         {
             var connectionString = _config.GetConnectionString("DbConnection");
             await using var connection = new MySqlConnection(connectionString);
-            var tmpCost = await connection.QueryAsync<Tariff>("SELECT Clients.ClientId AS Id, Clients.Email AS Email, Tariff.Cost AS Cost, Tariff.Name AS TariffName FROM Clients JOIN Tariff on Clients.TariffId = Tariff.TariffId WHERE Tariff.TariffId = ANY(SELECT TariffId from Tariff WHERE Cost >= @Cost); ", new { Cost = costTariff });
+            var tmpCost = await connection.QueryAsync<ClientsViewModel>("SELECT Clients.ClientId AS Id, Clients.Email AS Email, Tariff.Cost AS Cost, Tariff.Name AS TariffName FROM Clients JOIN Tariff on Clients.TariffId = Tariff.TariffId WHERE Tariff.TariffId = ANY(SELECT TariffId from Tariff WHERE Cost >= @Cost);", new { Cost = costTariff });
             return Ok(tmpCost);
         }
 
