@@ -6,6 +6,5 @@
         public string Email { get; set; } = string.Empty;
         public decimal Cost { get; set; }
         public string TariffName { get; set; } = string.Empty;
-
     }
 }

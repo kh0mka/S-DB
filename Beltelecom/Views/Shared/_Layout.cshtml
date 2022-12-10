@@ -30,6 +30,9 @@
                     <a asp-area="" asp-controller="Home" asp-action="Authorization" class="active">Авторизация</a>
                 </li>
                 <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Account" class="active">Личный кабинет</a>
+                </li>
+                <li>
                     <a href="http://192.168.100.58/openserver/phpmyadmin/index.php">Администрирование БД</a>
                 </li>
             </ul>
@@ -51,6 +54,7 @@
     </div>
     <div class="container">
         <main role="main" class="pb-3">
+            @ViewData["AuthMessage"]
             @RenderBody()
         </main>
     </div>

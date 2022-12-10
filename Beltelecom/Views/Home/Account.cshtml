@@ -1,0 +1,28 @@
+﻿@using Beltelecom.ClassEntities;
+@model Clients
+
+@{
+    ViewData["Title"] = "Account";
+}
+
+<h1>Ваш личный кабинет</h1>
+@if (Model.ClientId is null)
+{
+    <div>
+        Вы не авторизованы.
+    </div>
+}
+else
+{
+    <div>
+        Имейл @Model.Email
+    </div>
+    <div>
+        Адрес @Model.Address
+    </div>
+    <div>
+        Телефон: @Model.Phone
+    </div>
+}
+
+
