@@ -92,6 +92,7 @@ namespace Beltelecom.Controllers
                 else
                 {
                     ViewData["Error"] = "Пользователя с таким номером телефона нет.";
+                    return View(false);
                 }
             }
 
