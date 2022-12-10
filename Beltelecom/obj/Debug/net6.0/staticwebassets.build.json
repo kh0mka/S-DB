@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Kg1dokjXz2b6tw3/xuIm6qCM6xBLXYSANm7JptKsae0=",
+  "Hash": "C4sicM9m3NbHUZ5SxqBGTFiVtjvTcxjpE8H2HNMZ0fo=",
   "Source": "Beltelecom",
   "BasePath": "_content/Beltelecom",
   "Mode": "Default",
@@ -153,23 +153,6 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\shapka.jpg",
-      "SourceId": "Beltelecom",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
-      "BasePath": "_content/Beltelecom",
-      "RelativePath": "images/shapka.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\shapka.jpg"
-    },
-    {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\shapka.png",
       "SourceId": "Beltelecom",
       "SourceType": "Discovered",
@@ -253,23 +236,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\zala.png"
-    },
-    {
-      "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\images\\Требования_КП.xlsx",
-      "SourceId": "Beltelecom",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\",
-      "BasePath": "_content/Beltelecom",
-      "RelativePath": "images/Требования_КП.xlsx",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Требования_КП.xlsx"
     },
     {
       "Identity": "D:\\relax\\Beltelecom\\Beltelecom\\wwwroot\\js\\site.js",

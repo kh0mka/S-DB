@@ -98,7 +98,7 @@ div .layoutInfo {
 .item {
     margin-right: 128px;
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .callInfo {
